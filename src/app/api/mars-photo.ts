@@ -15,7 +15,6 @@ export const getMarsPhotos = async ({
   earth_date,
   page,
 }: getMarsPhotoProps) => {
-  console.log("getMarsPhotos", sol, camera, rover, earth_date, page);
   let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?api_key=DEMO_KEY
 &page=${page}`;
   if (sol) {
